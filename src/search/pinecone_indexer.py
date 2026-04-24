@@ -14,11 +14,11 @@ class PineconeImageSimilaritySearch:
         self,
         index_name: str,
         api_key: str,
+        cloud: str,
+        region: str,
         dimension: int = 768,
         namespace: str = "",
         metric: str = "cosine",
-        cloud: str = "aws",
-        region: str = "us-east-1",
         create_if_missing: bool = True,
     ):
         try:
