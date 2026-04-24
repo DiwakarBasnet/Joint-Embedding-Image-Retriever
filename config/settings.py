@@ -27,7 +27,7 @@ class Settings(BaseSettings):
     use_fp16: bool = True
     embedding_dim: int = 5120
     checkpoint_path: str = "weights/IN22K-vit.h.14-900e.pth.tar"
-    model_path: str = "weights/ijepa_vit_huge_package"
+    model_path: str = "weights/ijepa-target-encoder"
 
     # Model Architectures
     model_architectures: Dict[str, Dict[str, Any]] = {
