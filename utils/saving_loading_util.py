@@ -8,6 +8,7 @@ from src.models.ijepa import IJEPATargetEncoder
 class ViTConfig:
     img_size: int = 224
     in_chans: int = 3
+    patch_size: int = 14
     embed_dim: int = 1280
     depth: int = 32
     num_heads: int = 16
@@ -44,12 +45,10 @@ def save_model_package(
 
 
 def load_model_package(
-    package_dir: str = "weights/ijepa_model_package",
+    package_dir: str = "weights/ijepa-target-encoder",
     device: str = "cuda"
 ):
-    """
-    Load model from saved package (weights + config).
-    """
+    """Load model from saved package (weights + config)."""
     import os
 
     # Load config
