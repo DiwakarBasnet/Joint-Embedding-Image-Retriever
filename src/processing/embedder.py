@@ -1,12 +1,12 @@
-import torch
-import torch.nn as nn
-from torch.utils.data import DataLoader, Dataset
-from torchvision import transforms
-from PIL import Image
-import numpy as np
-from pathlib import Path
-from typing import List, Union, Tuple, Optional
 import tqdm
+import torch
+import numpy as np
+import torch.nn as nn
+from PIL import Image
+from pathlib import Path
+from torchvision import transforms
+from typing import List, Union, Tuple, Optional
+from torch.utils.data import DataLoader, Dataset
 
 
 class ImageEmbeddingDataset(Dataset):
