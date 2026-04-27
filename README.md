@@ -32,9 +32,9 @@ uv sync
 Create a `.env` file in the root directory with your Pinecone credentials:
 ```env
 PINECONE_API_KEY=your_api_key
-PINECONE_CLOUD=aws
-PINECONE_REGION=us-east-1
-PINECONE_INDEX_NAME=meme-search
+PINECONE_CLOUD=pinecone_cloud(aws/gcp)
+PINECONE_REGION=region(us-west-2/us-east-1)
+PINECONE_INDEX_NAME=your_pinecone_index_name
 ```
 
 ## Usage
