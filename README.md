@@ -1,5 +1,7 @@
 # Meme Similarity Search
 
+[![Demo Space](https://img.shields.io/badge/🤗-Open%20in%20Spaces-blue)](https://huggingface.co/spaces/Unspoiled-Egg/Meme-Recommender)
+
 A high-performance image retrieval system for memes using **I-JEPA (Image Joint-Embedding Predictive Architecture)** and **Pinecone**. This project enables semantic similarity search, allowing you to find visually and contextually similar memes by uploading an image.
 
 ## How it Works
