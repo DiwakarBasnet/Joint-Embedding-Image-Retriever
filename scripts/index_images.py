@@ -1,4 +1,9 @@
 from pathlib import Path
+import sys
+
+# Add the project root to sys.path to enable imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
 from config import settings
 from src.processing.model import IJEPAManager
 from src.processing.embedder import EmbeddingGenerator
